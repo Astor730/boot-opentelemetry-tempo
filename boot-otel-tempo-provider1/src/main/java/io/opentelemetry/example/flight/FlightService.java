@@ -30,7 +30,6 @@ public class FlightService {
 	@WithSpan
     public void doSomeWorkNewSpan() {
 		LOGGER.info("Doing some work In New span");
-		LOGGER.info("Secondary Work in span");
         Span span = Span.current();
  
         span.setAttribute("template.a2", "some value");
