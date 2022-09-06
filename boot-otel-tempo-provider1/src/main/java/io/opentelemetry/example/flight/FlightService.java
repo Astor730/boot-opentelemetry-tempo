@@ -31,6 +31,7 @@ public class FlightService {
     public void doSomeWorkNewSpan() {
 		LOGGER.info("Doing some work In New span");
         Span span = Span.current();
+		LOGGER.info("Post span creation");
  
         span.setAttribute("template.a2", "some value");
  
